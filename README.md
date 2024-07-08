@@ -3,6 +3,8 @@
 
 Este projeto é uma aplicação web simples para exibir informações de previsão do tempo com base na localização atual do usuário.
 
+<img src="https://i.imgur.com/X5XX3Cg.png"></img>
+
 ## Funcionalidades
 
 - Exibe a temperatura atual em Celsius.
