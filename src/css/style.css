@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', monospace;
+}
+
+:root {
+    --background-color-light: #EEF2F6;
+    --text-color-light: #333333;
+    --background-color-dark: #000;
+    --background-color-card-dark: #1F2024;
+    --text-color-dark: #ffffff;
+    --border-top-dark: #ececec48;
+}
+body {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+}
+
+/** --- dark mode --- */
+
+body.dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+body.dark-mode .weather-card {
+    position: relative;
+    max-width: 31.25rem;
+    margin: 0 auto;
+    margin-top: 6.25rem;
+
+    background-color: var(--background-color-card-dark);
+    border: none;
+}
+
+body.dark-mode #weather h2 {
+    color: var(--text-color-dark);
+    font-weight: 400;
+}
+
+body.dark-mode #weather p {
+    color: var(--text-color-dark);
+}
+
+body.dark-mode .text-body-secondary p {
+    color: var(--text-color-dark);
+}
+
+body.dark-mode .card-footer {
+    border-top: 1px solid var(--border-top-dark);
+}
+
+
+.theme-switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.theme-switch label {
+    margin-left: 10px;
+    font-weight: 800;
+}
+
+.switch-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 13px auto 0 auto;
+    color: var(--text-color-dark);
+}
+
+.switch-body {
+    background-color: var(--background-color-card-dark);
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+}
+
+
+
+.weather-card {
+    position: relative;
+    max-width: 31.25rem;
+    margin: 0 auto;
+    margin-top: 6.25rem;
+
+    background-color: white;
+    border: none;
+}
+
+#weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#weather h2 {
+    margin-bottom: 1.25rem;
+}
+
+#weather img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6.25rem;
+    margin: 0 auto;
+}
+
+#weather h2 {
+    font-size: 3.12rem;
+}
+
+#weather p {
+    font-weight: 200;
+    line-height: .62rem;
+}
+
+.text-body-secondary p {
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #weather h2 {
+        font-size: clamp(36px, 3vh, 2.6rem);
+    }
+}
